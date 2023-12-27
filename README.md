@@ -1,7 +1,7 @@
 # DocsGPT - S3 Integration
 
 ## Overview
-This project involves the integration of Amazon S3 for storing and retrieving documents, along with processing documents for efficient indexing in a vector space for similarity search and content-based retrieval. The script, written in Python, automates the ingestion of documents from either local directories or an S3 bucket, processes them, and subsequently uploads processed data back to S3.
+This project involves the integration of Amazon S3 for storing and retrieving documents, along with processing documents for efficient indexing in a vector space for similarity search and content-based retrieval.
 
 ## Key Features
 
@@ -26,13 +26,7 @@ This project involves the integration of Amazon S3 for storing and retrieving do
 
 ### What I Learned
 
-1. **AWS S3 Integration**: Gained practical experience in integrating and automating interactions with AWS S3 using Python.
+1. **AWS S3 Integration**: Gained practical experience in integrating and automating interactions with AWS S3 using AWS' SDK for Python, Boto3.
 
 ### Challenges
-- **AWS Permissions and Security**: Ensuring secure and correct AWS permissions for script functionality.
-- **Handling Large Datasets**: Developing efficient ways to process and handle large datasets without overwhelming system resources.
-
-### Future Improvements
-- [ ] **Error Handling**: Implement more robust error handling, especially for network issues and S3 access problems.
-- [ ] **User Interface**: Develop a GUI for easier parameter configuration and progress tracking.
-- [ ] **Extended Format Support**: Increase the range of document formats supported by the script.
+- **Handling Large Datasets**: Developing efficient ways to process and handle large datasets without overwhelming system resources. For example, iterating over Python generator rather than list to save memory.
