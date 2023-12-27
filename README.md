@@ -14,9 +14,12 @@ This project involves the integration of Amazon S3 for storing and retrieving do
 
 ## Technologies
 
-- Python
-- Boto3 
-- AWS S3
+- Python ![python-logo-only](https://github.com/jaredbradley243/DocsGPT-S3-Script/assets/107898107/c3d2ee19-fa5a-4374-931e-9f43e63935ea)
+
+- Boto3 ![boto3](https://github.com/jaredbradley243/DocsGPT-S3-Script/assets/107898107/6f0e536b-4cfc-49f4-82cf-ab449264bd78)
+
+- AWS S3 ![Amazon-S3-Logo](https://github.com/jaredbradley243/DocsGPT-S3-Script/assets/107898107/4ae6aa2e-6793-4cc4-8c88-7ed60db49f47)
+
 
 ### Tools:
 - Git ![icons8-git](https://user-images.githubusercontent.com/107898107/211131596-fdb65679-35fb-4d60-8ca2-5ec536487391.svg)
