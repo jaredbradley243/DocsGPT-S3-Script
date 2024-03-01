@@ -32,5 +32,5 @@ This project involves the integration of Amazon S3 for storing and retrieving do
 1. **AWS S3 Integration**: Gained practical experience in integrating and automating interactions with AWS S3 using AWS' SDK for Python, Boto3.
 2. **Python With Statement and Context Managers**: Gained experience using 'With Statements' in Python with a custom class behaving as a context manager. 
 
-### Challenges
-- **Handling Large Datasets**: Developing efficient ways to process and handle large datasets without overwhelming system resources. For example, iterating over Python generator rather than list to save memory.
+### What Could Be Improved
+- **Handling Very Large Datasets**: Developing efficient ways to process and handle extrmely large datasets (in the millions) without overwhelming system resources. For example, iterating over Python generator rather than list to save memory.
