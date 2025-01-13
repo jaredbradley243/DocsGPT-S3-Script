@@ -3,7 +3,7 @@
 ## Overview
 This project involves the integration of Amazon S3 for storing and retrieving documents, along with processing documents for efficient indexing in a vector space for similarity search and content-based retrieval.
 
-## Issue Overview
+## Issue
 🔖 Feature description
 The user should be able to add an S3 bucket for storing and accessing their documents.
 
