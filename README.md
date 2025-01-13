@@ -64,7 +64,7 @@ faiss_index = FAISS.load(os.getenv("S3_STORE") + "/faiss-index")
 
 ### What I Learned
 
-1. **AWS S3 Integration**: Gained practical experience in integrating and automating interactions with AWS S3 using AWS' SDK for Python, Boto3.
+1. **AWS S3 Integration**: Gained practical experience in integrating and automating interactions with AWS S3 using the AWS SDK for Python, Boto3.
 2. **Python With Statement and Context Managers**: Gained experience using 'With Statements' in Python with a custom class behaving as a context manager. 
 
 ### What Could Be Improved
