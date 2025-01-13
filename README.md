@@ -3,6 +3,41 @@
 ## Overview
 This project involves the integration of Amazon S3 for storing and retrieving documents, along with processing documents for efficient indexing in a vector space for similarity search and content-based retrieval.
 
+## Issue Overview
+🔖 Feature description
+The user should be able to add an S3 bucket for storing and accessing their documents.
+
+🎤 Why is this feature needed ?
+The documents are not just stored in the cloud but are also easier to share.
+That would reduce the storage usage on your hard drive.
+
+✌️ How do you aim to achieve this?
+In order to store documents in an S3, you can pass a variable S3_STORE=my-bucket-name via the .env file. However, if you are running the application on your local machine, you will need to provide AWS credentials. The good news is that you can choose how to provide these credentials: https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html
+
+When running scripts, the result should be uploaded to the given S3-bucket.
+
+The store in the application should access the documents from the S3-bucket.
+
+It could look like this
+
+```from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
+from langchain.document_loaders import S3Loader
+
+embeddings = OpenAIEmbeddings() 
+
+if(os.getenv("S3_STORE")):
+  loader = S3Loader(os.getenv("S3_STORE"))
+  documents = loader.load()
+
+faiss_index = FAISS.from_documents(documents, embeddings) 
+
+# Save index to S3
+faiss_index.save(os.getenv("S3_STORE") + "/faiss-index")
+
+# Load index from S3 
+faiss_index = FAISS.load(os.getenv("S3_STORE") + "/faiss-index")
+```
 ## Key Features
 
 ### S3 Integration
