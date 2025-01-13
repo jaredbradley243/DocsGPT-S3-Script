@@ -1,6 +1,6 @@
 # DocsGPT - S3 Integration
 
-## Overview
+## Project Overview
 This project involves the integration of Amazon S3 for storing and retrieving documents, along with processing documents for efficient indexing in a vector space for similarity search and content-based retrieval.
 
 ## Issue
@@ -38,7 +38,7 @@ faiss_index.save(os.getenv("S3_STORE") + "/faiss-index")
 # Load index from S3 
 faiss_index = FAISS.load(os.getenv("S3_STORE") + "/faiss-index")
 ```
-## Key Features
+## Solution Key Features
 
 ### S3 Integration
 - **Automated Interaction with S3**: The script can automatically download documents from a specified S3 bucket, process them, and upload the results back to S3.
